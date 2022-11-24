@@ -245,16 +245,6 @@
         });
         bounds_group.addLayer(layer_AllTREES231122_1);
         map.addLayer(layer_AllTREES231122_1);
-        var osmGeocoder = new L.Control.Geocoder({
-            collapsed: true,
-            position: 'topleft',
-            text: 'Search',
-            title: 'Testing'
-        }).addTo(map);
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .className += ' fa fa-search';
-        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
-        .title += 'Search for a place';
         var baseMaps = {};
         L.control.layers(baseMaps,{'Westerlo bomenbestand<br /><table><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Attentieboom0.png" /></td><td>Attentieboom</td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Maatregelennemen1.png" /></td><td>Maatregelen nemen</td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Vellen2.png" /></td><td>Vellen</td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Zonderverhoogdrisico3.png" /></td><td>Zonder verhoogd risico</td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Naderonderzoek4.png" /></td><td>Nader onderzoek</td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Geveld5.png" /></td><td>Geveld </td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Ecologischgeveld6.png" /></td><td>Ecologisch geveld </td></tr><tr><td style="text-align: center;"><img src="legend/AllTREES231122_1_Ecologischvellen7.png" /></td><td>Ecologisch vellen</td></tr></table>': layer_AllTREES231122_1,},{collapsed:false}).addTo(map);
         setBounds();
